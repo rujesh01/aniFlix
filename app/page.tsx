@@ -1,10 +1,13 @@
-import Image from "next/image";
+import AnimeDescription from "@/components/LandingPage/Description";
+import LandingNavbar from "@/components/LandingPage/LandingNavbar";
+import Header from "@/components/LandingPage/SearchAnime";
 
-export default function Home() {
+export default async function Home() {
   return (
-    <div>
-      this is root page
-      <h1>this is </h1>
-    </div>
+    <main className="w-full xl:container mx-auto">
+      <LandingNavbar/>
+      <Header />
+      <AnimeDescription />
+    </main>
   );
 }
